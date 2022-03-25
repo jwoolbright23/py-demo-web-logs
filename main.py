@@ -9,5 +9,5 @@ if __name__ == "__main__":
     hostname = socket.gethostname()
     local_ip = socket.gethostbyname(hostname)
     # this is the base for creating logs with this app (can be configured to log SSH requests, file moves, network requests
-    print("{}: {}@{} ip: {} home-dir: {}".format(ts, user, hostname, home_dir, local_ip))
+    print("{}: {}@{} ip: {} home-dir: {}".format(ts, user, hostname, local_ip, home_dir))
 
